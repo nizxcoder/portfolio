@@ -1,0 +1,23 @@
+
+.nav-link:hover::after{
+    /* margin-top: -10px; */
+    content:"";
+    display: block;
+    width: 102%;
+    height: 2px;
+    background-color: red;
+}
+.nav-link:focus::after{
+    content:"";
+    display: block;
+    width: 102%;
+    height: 2px;
+    background-color: red;
+}
+.nav-link:focus{
+    color: black;
+}
+.nav-btn{
+    position: fixed;
+    right: 2%;
+}

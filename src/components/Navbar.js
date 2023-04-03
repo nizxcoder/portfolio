@@ -10,14 +10,14 @@ export default function Navbar() {
         if(loc === "home"){
             window.scrollTo(0,0);
         }
-        else if(loc === "about") window.scrollTo(0,300);
-        else if(loc === "project") window.scrollTo(0,500);
-        else window.scrollTo(0, 1000);
+        else if(loc === "about") window.scrollTo(0,610);
+        else if(loc === "project") window.scrollTo(0,1220);
+        else window.scrollTo(0, 1900);
 
     }
     return (
         <div>
-            <nav className="navbar fixed-top navbar-expand-lg bg-body-light" >
+            <nav className="navbar fixed-top navbar-expand-lg bg-body" style={{background: "#fdfdfdfc"}} >
                 <div className="container-fluid" >
                     <div className='container d-flex p-0' style={{margin: "0px"}}>
                         <a className="navbar-brand mx-3" href="/home">Nizam.dev</a>

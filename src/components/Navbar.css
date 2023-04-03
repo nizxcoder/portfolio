@@ -1,6 +1,5 @@
 
 .nav-link:hover::after{
-    /* margin-top: -10px; */
     content:"";
     display: block;
     width: 102%;

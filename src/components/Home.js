@@ -13,6 +13,7 @@ import nodeLogo from '../logo/node.png'
 import javaLogo from '../logo/java.png'
 import helloLogo from '../logo/hellopng.png'
 import homeImg from '../logo/homeImg.jpg'
+import codeLogo from '../logo/codecheff.png'
 export default function Home() {
     return (
         <div className='home-content'>
@@ -27,6 +28,7 @@ export default function Home() {
                             <ul>
                                 <li><a href="https://www.linkedin.com/in/nijamuddin-ansari-8a74ab1a0/" target='_blank'><img src={linkedinLogo} alt="logo" height={28} /></a></li>
                                 <li><a href="https://github.com/nizxcoder" target='_blank'><img src={githubLogo} alt="logo" height={28} /></a></li>
+                                <li><a href="https://www.codechef.com/users/nizx" target='_blank'><img src={codeLogo} alt="logo" height={28} width={28}/></a></li>
                             </ul>
                         </div>
                     </div>

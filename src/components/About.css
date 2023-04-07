@@ -16,6 +16,7 @@
     align-items: center;
 }
 .about-img-box{
+    height: 190px;
     border: 2px solid black;
     border-radius: 100%;
     filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.629));
@@ -73,16 +74,20 @@ hr{
 /* //for mobile display */
 @media only screen and (max-width: 600px){
     .about-content{
-        height: 1300px;
+        height: 1250px;
+        justify-content: start;
     }
 
     .about-container-box{
         flex-direction: column;
-        height: 550px;
+        height: 650px;
+    }
+    .about-img-box{
+        height: 220px;
     }
     .about-text-area{
-        margin: 10px 0px;
-        width: 285px;        
+        margin: 30px 0px;
+        width: 285px;    
     }  
     .skill-showcase{
         height: 500px;

@@ -7,7 +7,7 @@ export default function About() {
       <div className="about-container-box">
         <div className="about-img-area">
           <img src={aboutImg} alt="" height={190}
-            width={190} className='about-img-box' />
+            className='about-img-box' />
         </div>
         <div className="about-text-area">
           <div className="about-header" style={{ color: "deeppink" }}><h2 style={{ letterSpacing: "2px" }}>About Me. <hr /></h2></div>

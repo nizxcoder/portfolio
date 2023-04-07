@@ -1,8 +1,111 @@
 .about-content{
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 650px;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.about-container-box{
+    /* border: 1px solid black; */
+    height: 250px;
+    max-width: 750px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    height: 610px;
-    width: 100%;
-    border: 1px solid red;
+}
+.about-img-box{
+    border: 2px solid black;
+    border-radius: 100%;
+    filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.629));
+}
+.about-text-area{
+    width: 600px;
+    margin-left: 50px;
+    padding: 4px 15px;
+    word-wrap: normal;
+}
+.about-text-area p{
+    font-weight: 500;
+}
+.skill-box-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+
+    /* filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.629)); */
+}
+.skills-box{
+    margin: 10px;
+    height: 250px;
+    width: 230px;
+    /* border: 1px solid black; */
+    border-radius: 13px;
+    text-align: center;
+    background: linear-gradient(20deg, rgb(0, 0, 0), red);
+    filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.629));
+}
+
+.skill-box-header h5{
+    padding: 5px;
+    border-bottom: 1.2px solid black;
+    color: white ;
+    letter-spacing: 2px;
+    filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.629));
+}
+.skill-list{
+    padding: 0px;
+    color: white;
+    list-style: none;
+    filter: drop-shadow(1px 2px 2px rgba(0, 0, 0, 0.629));
+    
+}
+.skill-list li{
+    margin: 13px 0px;
+}
+hr{
+    margin: 5px 0px;
+}
+
+/* //for mobile display */
+@media only screen and (max-width: 600px){
+    .about-content{
+        height: 1300px;
+    }
+
+    .about-container-box{
+        flex-direction: column;
+        height: 550px;
+    }
+    .about-text-area{
+        margin: 10px 0px;
+        width: 285px;        
+    }  
+    .skill-showcase{
+        height: 500px;
+    }
+    .skill-box-container{
+        display: inline;
+    }
+    .skills-box{
+        width: 200px;
+    }
+    .skill-box-1{
+        position: relative;
+        right: 30%;
+    }
+    .skill-box-2{
+        position: relative;
+        left: 38%;
+        top: -20%;
+    }
+    .skill-box-3{
+        position: relative;
+        right: 30%;
+        top: -50%;
+    }
+
 }

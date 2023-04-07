@@ -10,8 +10,8 @@ export default function Navbar() {
         if(loc === "home"){
             window.scrollTo(0,0);
         }
-        else if(loc === "about") window.scrollTo(0,610);
-        else if(loc === "project") window.scrollTo(0,1220);
+        else if(loc === "about") window.scrollTo(0,570);
+        else if(loc === "project") window.scrollTo(0,1170);
         else window.scrollTo(0, 1900);
 
     }

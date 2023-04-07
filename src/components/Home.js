@@ -22,7 +22,7 @@ export default function Home() {
                     <div className="text-area">
                         <div className="header">
                             <h1>Full-Stack MERN Developer.<img src={helloLogo} alt="hi" height={40} /></h1>
-                            <p>Hi, I'm Nijamuddin Ansari. A passionate Full-Stack MERN Developer.</p>
+                            <p>Hi, I'm Nijamuddin Ansari. A passionate Full-Stack MERN Developer. Based on Kolkata, India.</p>
                         </div>
                         <div className="social-link">
                             <ul>

@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    height: 650px;
+    height: 100%;
     width: 100%;
     /* border: 1px solid red; */
 }
@@ -70,7 +70,6 @@
 hr{
     margin: 5px 0px;
 }
-
 /* //for mobile display */
 @media only screen and (max-width: 600px){
     .about-content{

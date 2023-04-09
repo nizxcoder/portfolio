@@ -5,7 +5,8 @@ import fbLogo from '../logo/facebook.png'
 import gmailLogo from '../logo/gmail.png'
 import resume from '../docs/Nijamuddin_Resume.pdf'
 import './Email.css'
-const EmailContactForm = () => {
+
+const EmailContactForm = (props) => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -14,12 +15,13 @@ const EmailContactForm = () => {
     emailjs.sendForm('service_2pxuf84', 'template_z2qia58', form.current, 'o3TzUlol35YJXreBl')
       .then((result) => {
         // show the user a success message
+        props.showAlert(true);
         console.log("Email Sent");
       }, (error) => {
         // show the user an error
         console.log(error);
       });
-  };
+    };
 
   return (
     <div className="email-area">
@@ -40,7 +42,7 @@ const EmailContactForm = () => {
             <label>Message</label>
             <span></span>
           </div>
-          <button className='btn btn-primary px-5 py-1' type="submit">Send</button>
+          <button className='btn btn-primary px-5 py-1' type="submit" >Send</button>
         </form>
       </div>
       <div className="social-area">

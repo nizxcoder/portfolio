@@ -2,7 +2,7 @@ import React from 'react'
 import './Contact.css'
 import EmailContactForm from './EmailContactForm'
 import contactImg from '../logo/contactPhoto.jpg'
-export default function Contact() {
+export default function Contact(props) {
   return (
     <div className='contact-content'>
       <div className="contact-container">
@@ -13,7 +13,7 @@ export default function Contact() {
           <div className="contact-header">
             <h1>Get In Touch <hr /></h1>
           </div>
-          <EmailContactForm />
+          <EmailContactForm showAlert={props.showAlert} />
         </div>
       </div>
     </div>

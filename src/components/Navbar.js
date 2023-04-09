@@ -6,8 +6,14 @@ export default function Navbar() {
         if (window.innerWidth < 992) {
             // console.log(window.innerWidth)
             close.current.click();
+            if(loc === "home"){
+                window.scrollTo(0,0);
+            }
+            else if(loc === "about") window.scrollTo(0,730);
+            else if(loc === "project") window.scrollTo(0,2040);
+            else window.scrollTo(0, 3200)
         }
-        if(loc === "home"){
+        else if(loc === "home"){
             window.scrollTo(0,0);
         }
         else if(loc === "about") window.scrollTo(0,570);

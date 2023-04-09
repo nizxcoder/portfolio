@@ -1,0 +1,81 @@
+.email-area{
+    display: flex;
+    justify-content: space-between;
+    border-left: 2px solid black;
+    border-top: 2px solid black;
+    padding: 10px 30px;
+    margin: 30px 0px;
+}
+
+.text-field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 35px 0px;
+}
+.text-field label{
+    position: absolute;
+    color: #adadad;
+    top: 13px;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 15px;
+    pointer-events: none;
+    transition: .5s;
+}
+.text-field input{
+    width: 210px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.text-field span::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 25.7px;
+    width: 0%;
+    height: 2px;
+    background-color:deeppink;
+    transition: 0.5s;
+
+}
+
+.text-field input:focus ~ label,
+.text-field input:valid ~ label{
+    top: -5px;
+    color: deeppink;
+
+}
+.text-field input:focus ~ span::before,
+.text-field input:valid ~ span::before{
+    width: 100%;
+}
+.social-area{
+    /* width: 190px; */
+}
+.social-area h2{
+    margin-bottom: 0px;
+    margin-top: 25px;
+
+}
+.btn{
+    width: 100%;
+    border-radius: 50px;
+}
+
+.social-links ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+    margin: 33px 0px;
+}
+.social-links ul li{
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px){
+    .email-area{
+        flex-direction: column;
+    }
+}

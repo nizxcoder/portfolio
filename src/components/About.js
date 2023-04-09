@@ -10,7 +10,8 @@ export default function About() {
             className='about-img-box' />
         </div>
         <div className="about-text-area">
-          <div className="about-header" style={{ color: "deeppink" }}><h2 style={{ letterSpacing: "2px" }}>About Me. <hr /></h2></div>
+          <div className="about-header" style={{ color: "deeppink" }}><h2 style={{ letterSpacing: "2px" }}>About Me. <hr /></h2>
+          </div>
           <p>I am a Full-Stack Developer with a passion for building responsive and user friendly websites. I have a strong understanding of both front-end and back-end development, and I'm excited to put my skills to use in a professional setting. I'm a quick learner and team player, and I'm confident that I can be valuable asset to any web development team. </p>
         </div>
       </div>

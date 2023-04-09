@@ -5,7 +5,7 @@
     align-items: center;
     height: 100%;
     width: 100%;
-    margin: 50px 0px;
+    margin: 50px 0px 60px 0px;
 }
 
 .project-header {
@@ -28,7 +28,7 @@
 }
 
 .project-img img {
-    height: 250px;
+    height: 230px;
     width: 100%;
 }
 

@@ -30,7 +30,7 @@ export default function Project() {
           imageSrc={bookingRoute}
           title="BookingRoute (App)"
           description="BookingRoute is a mobile application designed to seamlessly connect users with service providers with offbeat hotels and resorts. "
-          link="https://onhousing.herokuapp.com"
+          link="https://play.google.com/store/apps"
         />
         <ProjectCard
           imageSrc={onHousing}

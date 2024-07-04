@@ -27,7 +27,7 @@
 }
 .img-box {
   height: 220px;
-  border: 3px solid black;
+  border: 2px solid rgba(172, 171, 171, 0.517);
   border-radius: 50% 0% 80% 450% / 50% 0% 0% 230%;
   filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.629));
 }

@@ -15,11 +15,19 @@
     justify-content: center;
     align-items: center;
 }
-.about-img-box{
-    height: 190px;
-    border: 2px solid black;
-    border-radius: 100%;
-    filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.629));
+.about-img-box {
+    height: 200px; /* Adjust height and width as needed */
+    width: 200px;
+    border: 2px solid #a3a1a36d; /* Adjust border properties */
+    /* border-radius: 50%; Use 50% for a circular shape */
+ 
+    box-sizing: border-box; /* Ensure border width is included in element size */
+}
+.about-img-box img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    /* border-radius: 50%; */
 }
 .about-text-area{
     width: 600px;
@@ -39,20 +47,43 @@
 
     /* filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.629)); */
 }
-.skills-box{
+.skills-box {
     margin: 10px;
-    height: 250px;
     width: 230px;
-    /* border: 1px solid black; */
     border-radius: 13px;
     text-align: center;
-    background: linear-gradient(20deg, rgb(0, 0, 0), red);
-    filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.629));
+    background: linear-gradient(45deg, #e96443, #904e95);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+}
+
+.skills-box .skill-box-header {
+    margin-bottom: 15px;
+}
+
+.skills-box .skill-box-header h5 {
+    font-size: 1.5rem;
+}
+
+.skills-box .skill-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-box .skill-list li {
+    margin-bottom: 8px;
+}
+
+.skills-box .skill-list li:last-child {
+    margin-bottom: 0;
 }
 
 .skill-box-header h5{
     padding: 5px;
-    border-bottom: 1.2px solid black;
+    border-bottom: 1.2px solid;
+    border-bottom-color: white;    
     color: white ;
     letter-spacing: 2px;
     filter: drop-shadow(1px 2px 3px rgba(0, 0, 0, 0.629));
@@ -71,9 +102,18 @@ hr{
     margin: 5px 0px;
 }
 /* //for mobile display */
+
+@media only screen and (max-width: 750px){
+    .skill-box-2{
+        
+        transform: scale(1) !important;
+    }
+    
+}
+
 @media only screen and (max-width: 600px){
     .about-content{
-        height: 1250px;
+        height: 1400px;
         justify-content: start;
     }
 

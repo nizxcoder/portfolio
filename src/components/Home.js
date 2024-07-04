@@ -1,20 +1,19 @@
-import React from 'react';
-import './Home.css';
-import linkedinLogo from '../logo/linkedin.svg';
-import './img.png';
-import githubLogo from '../logo/github.svg';
-import htmlLogo from '../logo/html.png';
-import cssLogo from '../logo/css.png';
-import jsLogo from '../logo/js.png';
-import mongoLogo from '../logo/mongo.png';
+import React from "react";
+import "./Home.css";
+import linkedinLogo from "../logo/linkedin.svg";
+import githubLogo from "../logo/github.svg";
+import htmlLogo from "../logo/html.png";
+import cssLogo from "../logo/css.png";
+import jsLogo from "../logo/js.png";
+import mongoLogo from "../logo/mongo.png";
 // import exLogo from '../logo/express.png';
-import reactLogo from '../logo/atom.png';
-import nodeLogo from '../logo/node.png';
-import javaLogo from '../logo/java.png';
-import helloLogo from '../logo/hellopng.png';
-import homeImg from '../logo/homeImg.png';
-import codeLogo from '../logo/codecheff.png';
-import flutterLogo from '../logo/flutter.png';
+import reactLogo from "../logo/atom.png";
+import nodeLogo from "../logo/node.png";
+import javaLogo from "../logo/java.png";
+import helloLogo from "../logo/hellopng.png";
+import homeImg from "../logo/homeImg.png";
+import codeLogo from "../logo/codecheff.png";
+import flutterLogo from "../logo/flutter.png";
 export default function Home() {
   return (
     <div className="home-content">
@@ -26,7 +25,7 @@ export default function Home() {
                 Full-Stack MERN Developer.
                 <img src={helloLogo} alt="hi" height={40} />
               </h1>
-              <p>
+              <p style={{ fontWeight: "normal" }}>
                 Hi, I'm Nijamuddin Ansari. A passionate Full-Stack MERN and
                 Flutter Developer. Based on Kolkata, India.
               </p>
@@ -78,8 +77,8 @@ export default function Home() {
                   height={35}
                   title="Java"
                   style={{
-                    marginTop: '-12px',
-                    marginRight: '-5px',
+                    marginTop: "-12px",
+                    marginRight: "-5px",
                   }}
                 />
               </li>

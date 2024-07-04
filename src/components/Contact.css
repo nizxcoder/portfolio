@@ -23,7 +23,7 @@
 .contact-img-area{
     padding: 0px 19px;
     margin: 25px;
-    width: 350px;
+    /* width: 350px; */
     filter: drop-shadow(3px 6px 4px grey);
 }
 .contact-email-area{

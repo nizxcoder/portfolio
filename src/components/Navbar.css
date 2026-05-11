@@ -1,22 +1,60 @@
+.portfolio-navbar {
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(255, 0, 120, 0.12);
+}
 
-.nav-link:hover::after{
-    content:"";
-    display: block;
-    width: 102%;
-    height: 2px;
-    background-color: red;
+.portfolio-navbar::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 0, 120, 0.08),
+    rgba(0, 170, 255, 0.08)
+  );
+  opacity: 0.6;
 }
-.nav-link:focus::after{
-    content:"";
-    display: block;
-    width: 102%;
-    height: 2px;
-    background-color: red;
+
+.navbar-brand {
+  font-weight: 700;
+  letter-spacing: 0.06em;
 }
-.nav-link:focus{
-    color: black;
+
+.nav-link {
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
-.nav-btn{
-    position: fixed;
-    right: 2%;
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, #ff007a, #00aaff);
+  transform-origin: left;
+  animation: nav-underline 0.25s ease-out forwards;
+}
+
+.nav-link:focus {
+  color: black;
+}
+
+.nav-btn {
+  position: fixed;
+  right: 2%;
+}
+
+@keyframes nav-underline {
+  from {
+    transform: scaleX(0.4);
+    opacity: 0.4;
+  }
+  to {
+    transform: scaleX(1);
+    opacity: 1;
+  }
 }

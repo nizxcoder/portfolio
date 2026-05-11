@@ -1,15 +1,15 @@
 import React from "react";
-import "./About.css";
-// import aboutImg from "../logo/aboutPhotojp.jpg";
-import aboutImg from "../image/aboutImg.jpg";
-export default function About() {
+import "../About.css";
+import aboutImg from "../../image/aboutImg.jpg";
+
+export default function About({ id }) {
   return (
-    <div className="about-content">
+    <section id={id} className="about-content">
       <div className="about-container-box">
         <div className="about-img-area">
           <img
             src={aboutImg}
-            alt=""
+            alt="about"
             className="about-img-box"
             style={{ borderRadius: "50%" }}
           />
@@ -23,10 +23,10 @@ export default function About() {
           <p>
             I am a Full-Stack Developer with a passion for building responsive
             and user friendly websites and Android apps. I have a strong
-            understanding of both front-end and back-end development, and I'm
-            excited to put my skills to use in a professional setting. I'm a
-            quick learner and team player, and I'm confident that I can be
-            valuable asset to any web development team.{" "}
+            understanding of both front-end and back-end development, and
+            I&apos;m excited to put my skills to use in a professional setting.
+            I&apos;m a quick learner and team player, and I&apos;m confident
+            that I can be valuable asset to any web development team.
           </p>
         </div>
       </div>
@@ -45,10 +45,10 @@ export default function About() {
               <h5>Front-End</h5>
             </div>
             <ul className="skill-list">
-              <li>HTML</li>
-              <li>CSS</li>
               <li>React.js</li>
-              <li>Flutter</li>
+              <li>JavaScript (ES6+)</li>
+              <li>HTML5</li>
+              <li>CSS3 / SCSS</li>
               <li>Bootstrap</li>
               <li>Tailwind</li>
             </ul>
@@ -61,29 +61,29 @@ export default function About() {
               <h5>Back-End</h5>
             </div>
             <ul className="skill-list">
-              <li>MongoDB</li>
-              <li>MySQL</li>
-              <li>Javascript</li>
               <li>Node.js</li>
               <li>Express.js</li>
+              <li>MongoDB</li>
+              <li>MySQL</li>
+              <li>REST APIs</li>
               <li>Firebase</li>
             </ul>
           </div>
           <div className="skills-box skill-box-3">
             <div className="skill-box-header">
-              <h5>Others</h5>
+              <h5>Mobile & Tools</h5>
             </div>
             <ul className="skill-list">
-              <li>Git</li>
-              <li>Github</li>
-              <li>Project Manage.</li>
-              <li>Leadership</li>
-              <li>Problem Solving</li>
-              <li>Communication</li>
+              <li>Flutter</li>
+              <li>Dart</li>
+              <li>Git / GitHub</li>
+              <li>Postman</li>
+              <li>VS Code</li>
+              <li>Agile Collaboration</li>
             </ul>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

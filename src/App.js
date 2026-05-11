@@ -1,30 +1,38 @@
-import { useState } from 'react';
-import './App.css';
-import About from './components/About';
-import Alert from './components/Alert';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
-import Home from './components/Home';
-import Navbar from './components/Navbar';
-import Project from './components/Project';
+import { useState } from "react";
+
+import Navbar from "./components/layout/Navbar";
+import Home from "./components/sections/Home";
+import About from "./components/sections/About";
+import Project from "./components/sections/Projects";
+import Contact from "./components/sections/Contact";
+import Footer from "./components/layout/Footer";
+import Alert from "./components/ui/Alert";
 
 function App() {
-  const [state, setState] = useState(null)
-  const showAlert = ()=>{
+  const [state, setState] = useState(null);
+  const showAlert = () => {
     setState(true);
-    setTimeout(()=>{
+    setTimeout(() => {
       setState(false);
-    },2000);
-  }
+    }, 2000);
+  };
+
+  const handleScroll = (id) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <>
-    <Navbar />
-    <Alert alert={state}/>
-    <Home/>
-    <About/>
-    <Project/>
-    <Contact showAlert={showAlert}/>
-    <Footer />
+      <Navbar onNavigate={handleScroll} />
+      <Alert alert={state} />
+      <Home id="home" />
+      <About id="about" />
+      <Project id="projects" />
+      <Contact id="contact" showAlert={showAlert} />
+      <Footer />
     </>
   );
 }

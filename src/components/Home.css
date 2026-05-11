@@ -145,7 +145,7 @@
   width: 0;
   max-width: 100%;
   animation:
-    typing 2.8s steps(28) 0.2s both,
+    typing 2.2s steps(28) 0.2s both,
     caret-blink 0.8s step-end infinite;
 }
 
@@ -216,6 +216,9 @@
     height: auto;
     width: 100%;
     background-color: rgb(255, 255, 255);
+  }
+  .role-list {
+    display: none;
   }
   .container-box {
     display: flex;

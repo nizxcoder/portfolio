@@ -20,6 +20,7 @@ export default function Home({ id }) {
     "Front-End Developer",
     "Back-End Developer",
     "Flutter Developer",
+    "Freelancer",
   ];
   const [roleIndex, setRoleIndex] = useState(0);
   const currentRole = roles[roleIndex];
@@ -27,7 +28,7 @@ export default function Home({ id }) {
   useEffect(() => {
     const intervalId = setInterval(() => {
       setRoleIndex((prev) => (prev + 1) % roles.length);
-    }, 4200);
+    }, 3900);
 
     return () => clearInterval(intervalId);
   }, [roles.length]);
@@ -53,6 +54,7 @@ export default function Home({ id }) {
                 <li>Front-End Developer</li>
                 <li>Back-End Developer</li>
                 <li>Flutter Developer</li>
+                <li>Freelancer</li>
               </ul>
               <p style={{ fontWeight: "normal" }}>
                 Hi, I&apos;m Nijamuddin Ansari. I build fast, responsive web and
